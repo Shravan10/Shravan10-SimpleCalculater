@@ -1,0 +1,63 @@
+<html>
+      <head>
+            <title>Simple Calculater </title>
+      </head>
+      <body>
+         <form name="calculation" style="width:250px;">
+             <fieldset>
+                 <legend>Simple Calculater</legend>
+         Number1:<input type="text" name="textnum1"><br>
+         Number2:<input type="text" name="textnum2"><br>
+         Result: <input type="text" name="textres" readonly><br><br>
+         <input type="button" value="Add" onclick="Add()"/>
+         <input type="button" value="Sub" onclick="Sub()"/>
+         <input type="button" value="Mul" onclick="Mul()"/>
+         <input type="button" value="Div" onclick="Div()"/>
+         <input type="button"  value="Mod" onclick="Mod()"/>
+         </fieldset>
+         </form>
+         <script>
+             function Add()
+             {
+              var num1,num2,res;
+              num1=Number(document.calculation.textnum1.value);
+              num2=Number(document.calculation.textnum2.value);
+              res =num1+num2;
+              document.calculation.textres.value=res;
+             }
+             function Sub()
+             {
+                 var num1,num2,res;
+                 num1=Number(document.calculation.textnum1.value);
+                 num2=Number(document.calculation.textnum2.value);
+                 res=num1-num2;
+                 document.calculation.textres.value=res;
+            }
+            function Mul()
+            {
+                var num1,num2,res;
+                 num1=Number(document.calculation.textnum1.value);
+                 num2=Number(document.calculation.textnum2.value);
+                 res=num1*num2;
+                 document.calculation.textres.value=res;
+            }
+            function Div()
+            {
+                 var num1,num2,res;
+                 num1=Number(document.calculation.textnum1.value);
+                 num2=Number(document.calculation.textnum2.value);
+                 res=num1/num2;
+                 document.calculation.textres.value=res;
+            }
+            function Mod()
+            {
+                var num1,num2,res;
+                num1=Number(document.calculation.textnum1.value);
+                num2=Number(document.calculation.textnum2.value);
+                res=num1%num2;
+                document.calculation.textres.value=res;
+            }
+
+         </script>
+      </body>
+</html>
